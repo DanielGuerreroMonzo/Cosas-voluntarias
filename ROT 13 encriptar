@@ -1,0 +1,30 @@
+# LA LETAR N ESTÁ BUGUEADA
+RES=input("ENCRIPTAR / DESENCRIPTAR --> ")
+lista="abcdefghijklmnopqrstuvwxyz"
+
+if RES=="ENCRIPTAR":
+    A=input("Escribe la PALABRA en MINÚSCULAS --> ")
+    for cont in range(0,len(A)):
+            n=0
+            JJ=(A[cont]+ "")
+            n=lista.find(JJ)
+            O2=int(ord(JJ))
+            if O2>(ord("a")+13):
+                O2-=13
+            else:
+                O2+=13
+            O1=chr(O2)
+            print(O1)
+if RES=="DESENCRIPTAR":
+    A=input("Escribe la palabra en MINÚSCULAS --> ")
+    for cont in range(0,len(A)):
+            n=0
+            JJ=(A[cont]+ "")
+            n=lista.find(JJ)
+            O2=int(ord(JJ))
+            if O2>(ord("a")+13):
+                O2-=13
+            else:
+                O2+=13
+            O1=chr(O2)
+            print(O1)
