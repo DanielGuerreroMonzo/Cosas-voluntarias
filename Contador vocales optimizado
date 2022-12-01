@@ -1,0 +1,20 @@
+pal=input("--> ")
+def bucle():
+    A=0
+    VN=0
+    CN=0
+    for contar in pal:
+        if A==int((len(pal)))-1:
+            print("VOCALES",VN) 
+            print("CONSONANTES",CN)
+            break
+        if A!=(len(pal)):
+            if (pal[A]=="a" or pal[A]=="e" or pal[A]=="i" or pal[A]=="o" or pal[A]=="u"):
+                VN+=1
+                A+=1
+            else:
+                CN+=1
+                A+=1
+bucle()
+
+
